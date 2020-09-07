@@ -5,7 +5,7 @@ package vo;
  * @Date 2020/9/7 17:32
  * @Version 1.0
  */
-public class constumer {
+public class consumer {
     private int cid;
     private String cname;
     private String cpassword;
