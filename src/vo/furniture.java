@@ -10,7 +10,7 @@ public class furniture {
     private String fname;
     private String fsummary;
     private int fnum;
-    private int money;
+    private int fmoney;
     private String fpic;
 
     public int getFid() {
@@ -45,12 +45,12 @@ public class furniture {
         this.fnum = fnum;
     }
 
-    public int getMoney() {
-        return money;
+    public int getFmoney() {
+        return fmoney;
     }
 
-    public void setMoney(int money) {
-        this.money = money;
+    public void setFmoney(int fmoney) {
+        this.fmoney = fmoney;
     }
 
     public String getFpic() {
