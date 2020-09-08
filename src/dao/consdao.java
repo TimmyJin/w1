@@ -8,4 +8,6 @@ import vo.consumer;
 
 public interface consdao {
     public void update(consumer uu,String cname);
+    public int getmoney(String userame);
+    public void updatem(String userame,int cmoney);
 }
