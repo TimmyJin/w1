@@ -52,7 +52,7 @@ public class ConsServlet extends HttpServlet {
                     request. setAttribute("iderror","Username is exists!");
                     try{
                         //转发至注册失败页面
-                        request. getRequestDispatcher( "consumermana/changecons.jsp").forward(request,response);
+                        request. getRequestDispatcher("consumermana/changecons.jsp").forward(request,response);
                     }catch(Throwable t){
                         getServletContext().log(t. getMessage());
                     }
@@ -77,7 +77,9 @@ public class ConsServlet extends HttpServlet {
                 request.getRequestDispatcher("ordermana/order_user.jsp").forward(request, response);
                 break;
         }
-
+    /**
+     *@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+     */
     }
     protected void doPost (HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException{
         // TODO Auto- generated methed stub
