@@ -8,6 +8,7 @@
 <%@page contentType="text/html;charset=UTF-8" language="java" import="java.util.*" pageEncoding="gb2312" %>
 <%@page import="vo.cart" %>
 <%@page import="java.util.*" %>
+<%@page import="javax.servlet.*" %>
 <%@page import="java.security.PublicKey" %>
 <%Vector ct=(Vector)session.getAttribute("ct");
 Vector newct=new Vector();
@@ -30,10 +31,10 @@ for (int i=0;i<ct.size();i++){
     response.sendRedirect("cart-see.jsp");
     %>
 <%
-    String path = request.GetContextPath();
+    String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN¡°>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
 <html>
 <head>
     <base href="<%=basePath%>">
