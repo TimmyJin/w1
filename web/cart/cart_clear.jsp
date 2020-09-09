@@ -10,8 +10,8 @@
 response.sendRedirect("cart-null.jsp");
 %>
 <%
-    string path = request.getcontextPath();
-    string bassPath = request.getScheme()="://"+request.getSsrverName()+":"+request.getSeverPort()+path+"/";
+    String path = request.getcontextPath();
+    String bassPath = request.getScheme()="://"+request.getSsrverName()+":"+request.getSeverPort()+path+"/";
 %>
 <!DOCTYPE HTML PUBLIC ¡±-//W3C//DTD HTML 4.01 TRANSITIONAL//EN¡°>
 <html>

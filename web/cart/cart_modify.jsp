@@ -5,19 +5,19 @@
   Time: 8:17
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" import="java.util.*" pageEncoding="gb2312" %>
+<%@page contentType="text/html;charset=UTF-8" language="java" import="java.util.*" pageEncoding="gb2312" %>
 <%@page import="vo.cart" %>
 <%@page import="java.util.*" %>
-<%@ page import="java.security.PublicKey" %>
+<%@page import="java.security.PublicKey" %>
 <%Vector ct=(Vector)session.getAttribute("ct");
 Vector newct=new Vector();
 for (int i=0;i<ct.size();i++){
     String number=request.getParameter("num"+i);
     cart cb=(cart)ct.elementAt(i);
-    String num=request.getParameter("num"+i)
+    String num=request.getParameter("num"+i);
             try{
                 int newnum=Integer.parseInt(num);
-                cb.setnum(newnum);
+                cb.setNum(newnum);
                 if (newnum!=0){
                     newct.addElement(cb);
                 }
@@ -31,7 +31,7 @@ for (int i=0;i<ct.size();i++){
     %>
 <%
     String path = request.GetContextPath();
-    String basePath = request.getScheme()+"://"+request.getServerName()+":"requset.getServerPort()+"/";
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN¡°>
 <html>
@@ -39,7 +39,7 @@ for (int i=0;i<ct.size();i++){
     <base href="<%=basePath%>">
     <title>My JSP 'cart-modify.jsp' starting pase</title>
 
-    <meta http-equiv="pragma" vontrnt="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
