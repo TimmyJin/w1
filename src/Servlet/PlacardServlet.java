@@ -74,7 +74,7 @@ public class PlacardServlet extends HttpServlet {
                     ret=plad2.delete(bbsID);
                     if(ret==0) {
                         out.println("<script language='javascript'>alert('公告信息删除失败!');</script>");
-                        request.getRequestDispatcher("placardmana/placardmana.jsp").forward(request, response);
+                        request.getRequestDispatcher("placardmana/placard_mana.jsp").forward(request, response);
                     }else{
                                 out.println("<script language='javascript'>alert('公告信息删除成功!');</script>");
                                 request.getRequestDispatcher("placardmana/placard_mana.jsp").forward(request,response);
