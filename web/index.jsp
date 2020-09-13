@@ -19,14 +19,12 @@
       sql="select * from furniture order by fmoney desc";
       else ;
       DBUtil conn = new DBUtil();
-      ResultSet rs = conn .executeQuery(sql);
+      ResultSet rs = conn.executeQuery(sql);
 %>
-
 <%
   String path = request.getContextPath();
   String basepath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>

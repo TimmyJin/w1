@@ -48,9 +48,9 @@
                                     <td width="7" valign="top"><img src= "images/T_contact.gif" width= "42" height= "28"></td>
                                     <td width= "72"><a href= "mailto:cctvlxy1457956@163.com">联系我们</a></td>
                                     <td width="10" valign= "top"><img src="images/T_favorite.gif" width= "42" height= "28"></td>
-                                    <td width= "68"><a href="javascript:window.external.AddFavorite('http://localhost:8080/dalongweb/','家具购物')">收藏本站</a></td>
+                                    <td width= "68"><a href="javascript:window.external.AddFavorite('http://timmyjin.top:8080/firstwab/','家具购物')">收藏本站</a></td>
                                     <td width="10" valign= "top"><img src= "images/T_home.gif" width= "42" height= "28"></td>
-                                    <td width="70"><a href="#" onclick= "this.style.behavior='url(#default#homepage)';this.sethomepage('http://loca1host:8080/da1ongweb/')">设为首页</a></td>
+                                    <td width="70"><a href="#" onclick= "this.style.behavior='url(#default#homepage)';this.sethomepage('http://timmyjin.top:8080/firstwab/')">设为首页</a></td>
                                 </tr>
                             </table>
                         </td>
