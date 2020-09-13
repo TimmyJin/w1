@@ -56,17 +56,17 @@
         }else{
             int sum=0;
             int ID=-1;
+            int snum = 0;
             int finum=0;
             String goodsname="";
-            for(int i=0,j=0;i<ct.size();i++) {
+            for(int i=0,j=0,k=0;i<ct.size();i++) {
                 snum = i;
                 cart cb = (cart) ct.elementAt(i);
                 j = cb.getNum();
-                K = cb.getPrice();
+                k = cb.getPrice();
                 ID = cb.getID();
                 if (ID > 0) {
-                        }
-                        ResultSet rs = conn.executeQuery("select*from furniture where fid=" + ID)
+                        ResultSet rs = conn.executeQuery("select*from furniture where fid=" + ID);
                         if (rs.next()) {
                             goodsname = rs.getString("fname");
                         }

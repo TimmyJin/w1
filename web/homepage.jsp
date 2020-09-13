@@ -25,7 +25,19 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     -->
 </head>
-<body>
-
-</body>
+<frameset rows="110,76%" frameborder="0" framespacing="0" scrolling="no" noresize="noresize">
+    <frame id="top" name="top" src="top.jsp"/>
+    <frameset rows="498,14%" frameborder="0" framespacing="0" scrolling="no" noresize="noresize">
+        <frameset cols="217,72%" frameborder="0" framespacing="0" scrolling="no" noresize="noresize">
+        <frameset rows="197,31%" frameborder="0" framespacing="0" scrolling="no" noresize="noresize">
+            <frame id="lefttop" name="lefttop" src="login.jsp"/>
+            <frame id="leftdown" name="leftdown" src="placardmana/placard_show.jsp"/>
+        </frameset>
+        <frame id="middledown" name="middledown" src="index.jsp"/>
+    </frameset>
+    <frameset rows="68,2%" frameborder="0" framespacing="0" scrolling="no" noresize="noresize">
+        <frame id="down" name="down" src="down.jsp"/>
+    </frameset>
+</frameset>
+</frameset>>
 </html>
