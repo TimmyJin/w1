@@ -35,8 +35,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             %>
             <tr>
                 <td width="2%" height= "12" align= "center">&nbsp; &nbsp; &nbsp; &nbsp;</td>
-                <td width= "95%" height= "27">&nbsp;&nbsp; &nbsp ;&nbsp;&nbsp; &nbsp ; &nbsp;&nbsp; &nbsp ;&nbsp;&nb
-                    &nbsp ;&nbsp;&nbsp; &nbsp ;&nbsp;&nbsp; &nbsp ;&nbsp;&nbsp; &nbsp; <%=pla.getTitle() %></td>
+                <td width="95%" height="27">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=pla.getTitle()%></td>
             <td width= "3%">&nbsp;</td>
         </tr>
         <tr>

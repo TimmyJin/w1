@@ -11,7 +11,7 @@ public class DBUtil {
     private final static String DBDRIVER  = "com.mysql.cj.jdbc.Driver" ;
     private final static String DBURL = "jdbc:mysql://timmyjin.top:3306/dalongweb?serverTimezone=UTC&userSSL=false" ;
     private final static String DBUSER = "root" ;
-    private final static String DBPASSWORD = "root" ;
+    private final static String DBPASSWORD = "JYL671314jyl.,";
     public static Connection getConnection(){
         try{
             Class.forName(DBDRIVER);

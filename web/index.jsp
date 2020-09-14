@@ -5,7 +5,7 @@
 <%@ page import="java.util.*" %>
 <%@ page import="dao.DBUtil" %>
 <%@ page import="vo.furniture" %>
-<% String sql="select * from furniture";
+<% String sql = "select * from furniture";
     String d = (String)request.getAttribute("k");
     if(d==null)
       sql="select * from furniture";
@@ -53,7 +53,7 @@
     function cheak0(obj) {
       location.href="OperServlet?action=11";
     }
-  </script>>
+  </script>
 </head>
 
   <body>
@@ -122,8 +122,8 @@
             <input type="hidden" name="action" id="action" value=6>
             <input type="hidden" name="id" value=<%fur.getFid();%>>
             <input type="submit" name="addfur" value="¹ºÂò">
-          </form>>
-        </td>>
+          </form>
+        </td>
       </tr>
       <%
       try {

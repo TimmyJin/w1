@@ -49,7 +49,7 @@
                 %>
     <tr>
         <td height= "24" class= "tableBorder_T_.dashed">
-            ka href= "PlacardServlet ?action=2&ID=<%=ID %>¡±target= "middledown "><%=title%></a>
+            <a href= "PlacardServlet?action=2&ID=<%=ID%>"target="middledown"><%=title%></a>
         </td>
     </tr>
     <%

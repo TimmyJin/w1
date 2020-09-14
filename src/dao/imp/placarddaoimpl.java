@@ -38,8 +38,8 @@ public class placarddaoimpl implements placarddao {
             rs=conn.createStatement().executeQuery(sql);
             if(rs.next()){
                 pla=new placard();
-                pla.setID(rs. getInt(1));
-                pla.setTitle(rs. getString(2));
+                pla.setID(rs.getInt(1));
+                pla.setTitle(rs.getString(2));
                 pla.setContent(rs.getString(3));
                 return pla;
             }

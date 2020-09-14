@@ -17,13 +17,11 @@ public class placard {
     public void setID(int ID) {
         this.ID = ID;
     }
-
-    public String getTitle() {
-        return title;
-    }
-
     public void setTitle(String title) {
         this.title = title;
+    }
+    public String getTitle() {
+        return title;
     }
 
     public String getContent() {

@@ -53,12 +53,12 @@ public class PlacardServlet extends HttpServlet {
                 int ID=-1;
                 placard pla1=new placard();
                 ID=Integer.parseInt(request.getParameter("ID"));
-                placarddao plad1=DAOFactory. instance(). getplacarddao();
+                placarddao plad1=DAOFactory.instance().getplacarddao();
                 if(ID>0){
                     pla1=plad1.query(ID);
                     request.setAttribute("pla1", pla1);
                 }
-                    request.getRequestDispatcher("placardmana/placard_detail.jsp"). forward(request, response);
+                    request.getRequestDispatcher("placardmana/placard_detail.jsp").forward(request,response);
                     break;
             case 3:
                 String ID1[]=request. getParameterValues("delid");
