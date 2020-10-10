@@ -26,7 +26,7 @@
 <div id="main">
     <table width="100%" bgcolor="0" cellpadding="0"cellspacing="0">
         <tr>
-            <td height="129" align="center" backgroud="images/shop_17.gif">
+            <td height="129" align="center" background="images/shop_17.gif">
                 <form name="login" method="POST" action="LoginServlet" onsubmit="return Check();">
                     <input type="hidden" id="action" name="action" value="1"/>
                     <table width="128" height="122" style="left: 0px;top:0px;width: 60px;">

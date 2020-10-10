@@ -83,7 +83,7 @@ String basePath=request.getScheme()+"://"+request.getServerName()+":"+request.ge
     </form>
 <table width="100%" height="48" border="1" cellpadding="0" cellpadding="0" bordercolor="FFFFFF">
     <tr>
-        <td width="100%" height="24" align="center" onclick="check0(this)">商品号</td><td width="2%"><img
+        <td width="10%" height="24" align="center" onclick="check0(this)">商品号</td><td width="2%"><img
         src="images/shop_09.gif" width="3" height="57"></td>
         <td width="10%" height="24" align="center" onclick="check1(this)">名称</td><td width="2%"><img
         src="images/shop_09.gif" width="3" height="57"></td>
@@ -121,33 +121,33 @@ String basePath=request.getScheme()+"://"+request.getServerName()+":"+request.ge
 
         for(int i=1;i<=pagesize;i++){
             furniture fur=new furniture();
-            fur.setfid(rs.getInt("fid"));
-            fur.setfname(rs.getString("fname"));
-            fur.setfsummary(rs.getString("fsummary"));
-            fur.setfnum(rs.getInt("fnum"));
-            fur.setfmoney(rs.getInt("fmoney"));
-            fur.setfpic(rs.getString("fpic"));
+            fur.setFid(rs.getInt("fid"));
+            fur.setFname(rs.getString("fname"));
+            fur.setFsummary(rs.getString("fsummary"));
+            fur.setFnum(rs.getInt("fnum"));
+            fur.setFmoney(rs.getInt("fmoney"));
+            fur.setFpic(rs.getString("fpic"));
 
 
         %>
         <tr>
-            <td height="20" align="center"><%=fur.getfid()%></td><td width="2%"><img src="images/shop_09.gif"
+            <td height="20" align="center"><%=fur.getFid()%></td><td width="2%"><img src="images/shop_09.gif"
             width="3" height="50"></td>
-            <td align="center"><%=fur.getfname()%></td><td width="2%"><img src="images/shop_09.gif" width="3"
+            <td align="center"><%=fur.getFname()%></td><td width="2%"><img src="images/shop_09.gif" width="3"
             height="50"></td>
-            <td align="center"><%=fur.getfsummary()%></td><td width="2%"><img src="images/shop_09.gif" width="3"
+            <td align="center"><%=fur.getFsummary()%></td><td width="2%"><img src="images/shop_09.gif" width="3"
             height="50"></td>
-            <td align="center"><%=fur.getfnum()%></td><td width="2%"><img src="images/shop_09.gif" width="3"
+            <td align="center"><%=fur.getFnum()%></td><td width="2%"><img src="images/shop_09.gif" width="3"
             height="50"></td>
-            <td align="center"><%=fur.getfmoney()%></td><td width="2%"><img src="images/shop_09.gif" width="3"
+            <td align="center"><%=fur.getFmoney()%></td><td width="2%"><img src="images/shop_09.gif" width="3"
             height="50"></td>
-            <td align="center"><img src=<%out.print(fur.getfpic());%> width=80 height=100></td><td width="2%>
+            <td align="center"><img src=<%out.print(fur.getFpic());%> width=80 height=100></td><td width="2"%>
             <img src="images/shop_09.gif" width="3" height="50"></td>
 
             <td align="right">
             <form method="post" name="addfur" action="FurServlet">
             <input type="hidden" name="action" id="action" value=6>
-            <input type="hidden" name="id" value=<%=fur.getfid() %>>
+            <input type="hidden" name="id" value=<%=fur.getFid() %>>
             <input type="submit" name="addfur" value="购买"></form>
             </td>
         </tr>

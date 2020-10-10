@@ -74,26 +74,26 @@
                 height="57"></td>
             </tr>
             <%List<furniture> flist=(List<furniture>)request.getAttribute("flist");
-            for (furniture fur:flist){
+            for(furniture fur:flist){
                 %>
             <tr>
-                <td height="20" align="center"><%=fur.getfid()%></td><td width="2%"><img src="images/shop_09.gif"
+                <td height="20" align="center"><%=fur.getFid()%></td><td width="2%"><img src="images/shop_09.gif"
                                                                                          width="3" height="57"></td>
-                <td align="center"><%=fur.getfname()%></td><td width="2%"><img src="images/shop_09.gif" width="3"
+                <td align="center"><%=fur.getFname()%></td><td width="2%"><img src="images/shop_09.gif" width="3"
                                                                               height="57"></td>
-                <td align="center"><%=fur.getfsummary()%></td><td width="2%"><img src="images/shop_09.gif" width="3"
+                <td align="center"><%=fur.getFsummary()%></td><td width="2%"><img src="images/shop_09.gif" width="3"
                                                                                   height="57"></td>
-                <td align="center"><%=fur.getfnum()%></td><td width="2%"><img src="images/shop_09.gif" width="3"
+                <td align="center"><%=fur.getFnum()%></td><td width="2%"><img src="images/shop_09.gif" width="3"
                                                                               height="57"></td>
-                <td align="center"><%=fur.getfmoney()%></td><td width="2%"><img src="images/shop_09.gif" width="3"
+                <td align="center"><%=fur.getFmoney()%></td><td width="2%"><img src="images/shop_09.gif" width="3"
                                                                                 height="57"></td>
-                <td align="center"><img src=<%out.print(fur.getfpic());%> width=80 height=100></td><td width="2%">
+                <td align="center"><img src=<%out.print(fur.getFpic());%> width=80 height=100></td><td width="2%">
             <img src="images/shop_09.gif" width="3" height="57"></td>
                 
                 <td align="right">
                     <form method="post" name="addfur" action="FurServlet">
                     <input type="hidden" name="cation" id="action" value=6>
-                    <input type="hidden" name="id" value=<%=fur.getfid() %>>
+                    <input type="hidden" name="id" value=<%=fur.getFid() %>>
                     <input type="submit" name="addfur" value="¹ºÂò"></form>
                 </td>
             </tr>
